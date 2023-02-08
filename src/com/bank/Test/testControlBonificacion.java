@@ -2,7 +2,6 @@ package com.bank.Test;
 
 import com.bank.modelo.*;
 
-
 public class testControlBonificacion {
     public static void main(String[] args) {
         funcionario nicolas=new contador();
