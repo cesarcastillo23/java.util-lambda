@@ -2,9 +2,9 @@ package com.bank.Test;
 
 public class TestMain {
     public static void main(String[] args) {
-        int[] edades=new int[5];
+        int[] edades=new int[6];
         edades[2]=30;
-        System.out.println(edades[4]);
+       // System.out.println(edades[2]);
         for (int i=0;i< edades.length;i++){
             System.out.println(edades[i]);
 

@@ -1,10 +1,10 @@
 package com.bank.Test;
 
-import com.bank.modelo.gerente;
+import com.bank.modelo.Gerente;
 
-public class testGerente {
+public class TestGerente {
     public static void main(String[] args) {
-        gerente cesar = new gerente();
+        Gerente cesar = new Gerente();
          cesar.setSalario(3000);
 //        funcionario cesar =new funcionario();
         cesar.setTipo(1);

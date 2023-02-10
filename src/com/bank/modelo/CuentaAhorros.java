@@ -1,8 +1,8 @@
 package com.bank.modelo;
 
-public class cuentaAhorros extends Cuenta{
+public class CuentaAhorros extends Cuenta{
 
-    public cuentaAhorros(int agencia,int numero){
+    public CuentaAhorros(int agencia, int numero){
         super (agencia,numero);
     }
 

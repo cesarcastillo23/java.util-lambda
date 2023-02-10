@@ -1,5 +1,5 @@
 package com.bank.modelo;
-public class Administrador extends funcionario implements Autenticable {
+public class Administrador extends Funcionario implements Autenticable {
 
     private AutenticacionUtil util;
 

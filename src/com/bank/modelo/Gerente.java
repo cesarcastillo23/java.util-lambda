@@ -1,6 +1,6 @@
 package com.bank.modelo;
 
-public class gerente extends funcionario implements Autenticable{
+public class Gerente extends Funcionario implements Autenticable{
 
 
     public double getBonificacion(){

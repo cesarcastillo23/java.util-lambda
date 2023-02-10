@@ -1,8 +1,8 @@
 package com.bank.modelo;
 
-public class control {
+public class Control {
     private double suma;
-    public double registrarSalario(funcionario funcionario){
+    public double registrarSalario(Funcionario funcionario){
         this.suma=funcionario.getBonificacion()+this.suma;
         System.out.println("calculo actual es: " + this.suma);
         return this.suma;

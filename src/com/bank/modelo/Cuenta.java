@@ -2,11 +2,13 @@ package com.bank.modelo;
 
 import com.bank.Test.SaldoInsuficienteException;
 
+import java.util.Comparator;
+
 /**
  *
  */
 
-public abstract class Cuenta {
+public abstract class Cuenta implements Comparable<Cuenta> {
 
             private int agencia;
             private int numero;
@@ -15,15 +17,11 @@ public abstract class Cuenta {
 
             private static int total=0;
 
-            public Cuenta(int agencia,int numero){
-                if(agencia<=0){
-                    System.out.println("No se permiten 0");
-                    this.agencia=1;
-                }else {
-                    this.agencia=agencia;
-                    total++;
-                    System.out.println("se han creando: "+total+" en total");
-                }
+            public Cuenta(int agencia, int numero ){
+                this.agencia=agencia;
+                this.numero=numero;
+               // System.out.println("Estoy creando una cuenta "+this.numero);
+                Cuenta.total++;
 
             }
             //Metodos
@@ -100,14 +98,22 @@ public abstract class Cuenta {
 
 
             }
+            public String toString() {
+                String cuenta = "Numero: " + this.numero +
+                        ", Agencia: " + this.agencia+" y titular: "+
+                        this.titular.getNombre();
+                return cuenta;
+            }
 
-
+            @Override
+            public boolean equals(Object obj){
+                Cuenta cuenta =(Cuenta) obj;
+           return this.agencia == cuenta.getAgencia() &&
+                        this.numero == cuenta.getNumero();
+            }
+            @Override
+            public int compareTo(Cuenta o){
+               // return Integer.compare(this.agencia,o.getAgencia());
+                return Double.compare(this.getSaldo(),o.getSaldo());
+            }
         }
-
-
-
-
-
-
-
-

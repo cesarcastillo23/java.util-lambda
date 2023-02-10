@@ -4,16 +4,16 @@ import com.bank.modelo.*;
 
 public class testControlBonificacion {
     public static void main(String[] args) {
-        funcionario nicolas=new contador();
+        Funcionario nicolas=new Contador();
 
         nicolas.setSalario(2000);
 
-        gerente ximena=new gerente();
+        Gerente ximena=new Gerente();
         ximena.setSalario(1000);
 
-        contador alex= new contador();
+        Contador alex= new Contador();
         alex.setSalario(3000);
-        control controlBonificacion=new control();
+        Control controlBonificacion=new Control();
         controlBonificacion.registrarSalario(nicolas);
         controlBonificacion.registrarSalario(ximena);
         controlBonificacion.registrarSalario(alex);

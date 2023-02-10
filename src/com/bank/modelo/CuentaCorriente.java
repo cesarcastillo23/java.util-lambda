@@ -2,10 +2,10 @@ package com.bank.modelo;
 
 import com.bank.Test.SaldoInsuficienteException;
 
-public class cuentaCorriente extends Cuenta {
+public class CuentaCorriente extends Cuenta {
 
 
-    public cuentaCorriente(int agencia,int numero){
+    public CuentaCorriente(int agencia, int numero){
         super(agencia,numero);
     }
 

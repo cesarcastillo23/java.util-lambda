@@ -1,12 +1,12 @@
 package com.bank.Test;
 
-import com.bank.modelo.cuentaAhorros;
-import com.bank.modelo.cuentaCorriente;
+import com.bank.modelo.CuentaAhorros;
+import com.bank.modelo.CuentaCorriente;
 
 public class testCuenta {
     public static void main(String[] args) {
-        cuentaCorriente cc=new cuentaCorriente(1,5);
-        cuentaAhorros ca =new cuentaAhorros(5,4);
+        CuentaCorriente cc=new CuentaCorriente(1,5);
+        CuentaAhorros ca =new CuentaAhorros(5,4);
 
         cc.depositar(2500);
         cc.depositar(2500);

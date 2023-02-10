@@ -1,12 +1,12 @@
 package com.bank.modelo;
 
-public abstract class funcionario {
+public abstract class Funcionario {
 
     private String nombre;
     private String documento;
     private double salario;
     private int tipo;
-    public funcionario(){
+    public Funcionario(){
 
     }
 

@@ -1,11 +1,11 @@
 package com.bank.Test;
 
-import com.bank.modelo.contador;
-import com.bank.modelo.funcionario;
+import com.bank.modelo.Contador;
+import com.bank.modelo.Funcionario;
 
-public class testFuncionario {
+public class TestFuncionario {
     public static void main(String[] args) {
-        funcionario diego= new contador();
+        Funcionario diego= new Contador();
         diego.setNombre("diego");
         diego.setDocumento("1555663366");
         diego.setSalario(2000);
